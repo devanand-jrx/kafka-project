@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class KafkaJsonProducerService {
-    @Value("${spring.kafka.topic-json.name}")
+    @Value("${spring.kafka.topic.json.name}")
     private String topicJsonName;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaJsonProducerService.class);
